@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Posts de Blog</h2>
+
+<div id="posts"></div>
+
+<script>
+var posts = [
+  { "titulo":"Post 1", "conteudo":"Este é o conteúdo do Post 1." },
+  { "titulo":"Post 2", "conteudo":"Este é o conteúdo do Post 2." }
+];
+
+var div = document.getElementById("posts");
+
+for (var i in posts) {
+  div.innerHTML += "<h3>" + posts[i].titulo + "</h3><p>" + posts[i].conteudo + "</p>";
+}
+</script>
+
+</body>
+</html>

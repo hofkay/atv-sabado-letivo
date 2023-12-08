@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Desaparece e reaparece</h1>
+    </div>
+    <div>
+        <button id="btn1">Desaparecer</button>
+        <button id="btn2">Reaparecer</button>
+    </div>
+    <script>
+        $('#btn1').on("click", botao1) // Ao clicar no botão a lista ficara azul
+        function botao1() {
+            $('h1').fadeOut("2000")
+        }
+
+        $('#btn2').on("click", botao2) // Ao clicar no botão a lista ficara azul
+        function botao2() {
+            $('h1').fadeIn("2000")
+        }
+    </script>
+</body>
+
+</html>

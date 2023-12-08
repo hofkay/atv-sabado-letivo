@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Usuários</h2>
+
+<div id="usuarios"></div>
+
+<script>
+var usuarios = [
+  { "nome":"João", "email":"joao@email.com" },
+  { "nome":"Maria", "email":"maria@email.com" }
+];
+
+var div = document.getElementById("usuarios");
+
+for (var i in usuarios) {
+  div.innerHTML += 'Nome: ' + usuarios[i].nome + ", email: " + usuarios[i].email + "<br>";
+}
+</script>
+
+</body>
+</html>

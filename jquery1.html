@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-
+/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Mude a cor do botão</h1>
+    </div>
+    <div>
+        <button id="btn">Click aqui para mudar de cor</button>
+    </div>
+    <script>
+        $('#btn').on("click", botao) // Ao clicar no botão a lista ficara azul
+        function botao() {
+            $('#btn').css({ 'color': 'blue' })
+        }
+    </script>
+</body>
+
+</html>
